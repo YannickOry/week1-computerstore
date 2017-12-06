@@ -1,9 +1,14 @@
 package be.pxl.computerstore.hardware;
 
-public class GamingController  {
+public class GamingController extends Peripheral {
 
+	
 	public GamingController(String vendor, String name, double price) {
-		
+		super(vendor, name, price);
+		// TODO Auto-generated constructor stub
 	}
+
+
+	
 
 }

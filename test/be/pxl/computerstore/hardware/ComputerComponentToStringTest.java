@@ -13,6 +13,7 @@ public class ComputerComponentToStringTest {
 	public void processorToStringTest() {
 		Processor processor = new ProcessorBuilder().build();
 		String stringUnderTest = processor.toString();
+		System.out.println(processor.toString());
 		assertTrue(stringUnderTest.contains("ArticleNumber = " + processor.getArticleNumber()));
 		assertTrue(stringUnderTest.contains("Vendor = " + ProcessorBuilder.VENDOR));
 		assertTrue(stringUnderTest.contains("Name = " + ProcessorBuilder.NAME));
@@ -24,6 +25,7 @@ public class ComputerComponentToStringTest {
 	public void computerCaseToStringTest() {
 		ComputerCase computerCase = new ComputerCaseBuilder().build();
 		String stringUnderTest = computerCase.toString();
+		System.out.println(computerCase.toString());
 		assertTrue(stringUnderTest.contains("ArticleNumber = " + computerCase.getArticleNumber()));
 		assertTrue(stringUnderTest.contains("Vendor = " + ComputerCaseBuilder.VENDOR));
 		assertTrue(stringUnderTest.contains("Name = " + ComputerCaseBuilder.NAME));
