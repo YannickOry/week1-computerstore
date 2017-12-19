@@ -8,7 +8,6 @@ import be.pxl.computerstore.hardware.ComputerComponent;
 import be.pxl.computerstore.hardware.ComputerSystem;
 import be.pxl.computerstore.hardware.Peripheral;
 import be.pxl.computerstore.hardware.Processor;
-import be.pxl.computerstore.util.TooManyPeripheralsException;
 
 public class ComputerSystemConfigurator {
 

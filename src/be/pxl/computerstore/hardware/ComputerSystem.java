@@ -3,7 +3,6 @@ package be.pxl.computerstore.hardware;
 import be.pxl.computerstore.util.Computable;
 import be.pxl.computerstore.util.TooManyPeripheralsException;
 
-@SuppressWarnings("rawtypes")
 public class ComputerSystem implements Computable{
 
 	private Processor processor;
@@ -87,9 +86,9 @@ throw new TooManyPeripheralsException("Overschreden");
 		StringBuilder tekst  = new StringBuilder();
 		
 		tekst.append("Computercase:\n");
-		tekst.append(computerCase.toString());
+		tekst.append(computerCase.toString()+"\n");
 		tekst.append("Processor:\n");
-		tekst.append(processor.toString());
+		tekst.append(processor.toString()+"\n");
 		
 		int volgnummer=0;
 		
@@ -97,7 +96,8 @@ throw new TooManyPeripheralsException("Overschreden");
 			if (peripheral != null) {
 				volgnummer++;
 				tekst.append("Randapparaat "+ volgnummer + ":");
-				tekst.append(peripheral.toString());
+				tekst.append(peripheral.toString()+"\n");
+				
 			}
 		}
 		tekst.append("TOTAAL EXCL: " + totalPriceExcl() + "\n");

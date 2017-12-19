@@ -1,14 +1,11 @@
 package be.pxl.computerstore.hardware;
 
 
-public abstract class Peripheral extends Article{
+public abstract class Peripheral extends ComputerComponent{
 	
 	
 	public Peripheral(String vendor, String name, double price) {
-	setVendor(vendor);
-	setName(name);
-	setPrice(price);
-	genereer();
+		super(vendor, name, price);
 	}
 	
 	public String getShortDescription() {

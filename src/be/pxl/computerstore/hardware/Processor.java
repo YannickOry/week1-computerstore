@@ -1,15 +1,13 @@
 package be.pxl.computerstore.hardware;
 
 
-public class Processor extends Article {
+public class Processor extends ComputerComponent {
 
 
 	private double clockspeed;
 	
 	public Processor(String vendor,String name, double price, double clockspeed) {
-		setVendor(vendor);
-		setName(name);
-		setPrice(price);
+		super(vendor, name, price);
 		setClockspeed(clockspeed);
 	
 	}

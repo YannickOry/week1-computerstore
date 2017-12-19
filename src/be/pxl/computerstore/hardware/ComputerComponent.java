@@ -2,12 +2,18 @@
 
 import java.util.Random;
 
-public class Article {
+public class ComputerComponent {
 
 	private String vendor;
 	private String name;
 	private double price;
 	private String articleNumber;
+	public ComputerComponent(String vendor,String name,double price) {
+		setVendor(vendor);
+		setName(name);
+		setPrice(price);
+		genereer();
+	}
 	public String getVendor() {
 		return vendor;
 	}

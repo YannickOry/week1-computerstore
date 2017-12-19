@@ -2,16 +2,14 @@ package be.pxl.computerstore.hardware;
 
 import be.pxl.computerstore.util.Dimension;
 
-public class ComputerCase extends Article {
+public class ComputerCase extends ComputerComponent {
 
 	private Dimension dimension;
 	private double weight;
 	
 	public ComputerCase(String vendor, String name,double price) {
-		setVendor(vendor);
-		setName(name);
-		setPrice(price);
-		genereer();
+		super(vendor, name, price);
+	
 	}
 
 	public Dimension getDimension() {
